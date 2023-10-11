@@ -1,0 +1,19 @@
+<h1>Formulari de Dades Personals</h1>
+<form action="processar.php" method="POST" enctype="multipart/form-data">
+<label for="nom">Nom:</label> <input type="text" id="nom" name="nom" maxlength="20"
+required autofocus placeholder="Introdueix el teu nom"><br>
+<label for="cognoms">Cognoms:</label> <input type="text" id="cognoms" name="cognoms"
+maxlength="20" required placeholder="Introdueix els teus cognoms"><br>
+<label for="document_identitat">Document d’identitat (DNI/NIE vàlid):</label> <input
+type="text" id="document_identitat" name="document_identitat" pattern="[0-9]{8}[A-Z]$"
+required placeholder="12345678X"><br>
+<label for="edat">Edat (0-100 anys):</label> <input type="number" id="edat" name="edat"
+min="0" max="100" required placeholder="Introdueix la teva edat"><br>
+<label for="correu_electronic">Correu electrònic:</label> <input type="email"
+id="correu_electronic" name="correu_electronic" required
+placeholder="example@domini.com"><br>
+<label for="contrasenya">Contrasenya:</label> <input type="password" id="contrasenya"
+name="contrasenya" required placeholder="Introdueix la teva contrasenya"><br>
+<label for="fotografia_dni">Fotografia del DNI (màxim 2 fitxers):</label> <input type="file"
+id="fotografia_dni" name="fotografia_dni[]" accept="image/*" multiple required><br>
+<input type="submit" value="Enviar"> </form>
