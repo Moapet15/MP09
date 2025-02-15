@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat SVG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Activitat: Codificació d’Imatges Vectorials amb SVG</h1>
+
+    <section>
+        <h2>Exemples de gràfics vectorials</h2>
+        <div class="container">
+            <!-- Exemple 1: Casa amb sol -->
+            <div class="image-box">
+                <h3>Casa amb sol</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                    <!-- Cel blau -->
+                    <rect width="200" height="200" fill="skyblue" />
+                    <!-- Sol -->
+                    <circle cx="40" cy="40" r="20" fill="yellow" />
+                    <!-- Terra verda -->
+                    <rect y="150" width="200" height="50" fill="lightgreen" />
+                    <!-- Cos de la casa -->
+                    <rect x="60" y="100" width="80" height="50" fill="peachpuff" />
+                    <!-- Sostre de la casa -->
+                    <polygon points="50,100 150,100 100,70" fill="peru" />
+                    <!-- Finestres -->
+                    <rect x="70" y="110" width="20" height="20" fill="white" />
+                    <rect x="110" y="110" width="20" height="20" fill="white" />
+                    <!-- Porta -->
+                    <rect x="90" y="120" width="20" height="30" fill="saddlebrown" />
+                    <circle cx="105" cy="135" r="2" fill="yellow" />
+                </svg>
+            </div>
+
+            <!-- Exemple 2: Cotxe vermell -->
+            <div class="image-box">
+                <h3>Cotxe vermell</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+                    <!-- Fons gris -->
+                    <rect width="200" height="100" fill="lightgrey" />
+                    <!-- Carrosseria -->
+                    <rect x="30" y="40" width="140" height="30" fill="red" />
+                    <rect x="50" y="20" width="100" height="30" fill="red" />
+                    <!-- Finestres -->
+                    <rect x="60" y="25" width="30" height="20" fill="skyblue" />
+                    <rect x="110" y="25" width="30" height="20" fill="skyblue" />
+                    <!-- Rodes -->
+                    <circle cx="50" cy="80" r="10" fill="black" />
+                    <circle cx="150" cy="80" r="10" fill="black" />
+                    <circle cx="50" cy="80" r="5" fill="darkgrey" />
+                    <circle cx="150" cy="80" r="5" fill="darkgrey" />
+                    <!-- Llums -->
+                    <rect x="30" y="50" width="10" height="10" fill="yellow" />
+                    <rect x="160" y="50" width="10" height="10" fill="yellow" />
+                </svg>
+            </div>
+
+            <div class="image-box">
+                <h3>Robot</h3>
+                <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Antenna -->
+                    <line x1="100" y1="30" x2="100" y2="10" stroke="gray" stroke-width="5" />
+                    <circle cx="100" cy="10" r="7" fill="red" />
+                
+                    <!-- Head -->
+                    <rect x="60" y="40" width="80" height="60" rx="10" ry="10" fill="gray" />
+                    
+                    <!-- Eyes -->
+                    <circle cx="80" cy="70" r="10" fill="green" />
+                    <circle cx="120" cy="70" r="10" fill="green" />
+                    <circle cx="80" cy="70" r="5" fill="white" />
+                    <circle cx="120" cy="70" r="5" fill="white" />
+
+                    <!-- Body -->
+                    <rect x="70" y="110" width="60" height="100" fill="gray" />
+                    
+                    <!-- Arms -->
+                    <rect x="30" y="130" width="40" height="10" fill="gray" />
+                    <rect x="130" y="130" width="40" height="10" fill="gray" />
+                
+                    <!-- Buttons -->
+                    <circle cx="100" cy="140" r="7" fill="red" />
+                    <circle cx="100" cy="160" r="7" fill="green" />
+                    <circle cx="100" cy="180" r="7" fill="blue" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Diferències entre imatges de mapa de bits i imatges vectorials</h2>
+        <p>
+            Les imatges de mapa de bits es construeixen a partir de píxels, fet que les fa més adequades per a fotografies o elements visuals amb detalls complexos. Tanmateix, poden perdre qualitat si s’amplien excessivament.
+        </p>
+        <p>
+            Les imatges vectorials, com les generades amb SVG, es defineixen mitjançant equacions matemàtiques. Aquestes són escalables infinitament sense perdre qualitat i són ideals per a gràfics simples, logotips o icones.
+        </p>
+    </section>
+</body>
+</html>

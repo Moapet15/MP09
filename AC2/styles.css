@@ -1,0 +1,49 @@
+.album {
+    background-color: black;
+    width: 1900px;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.canso {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 600px;
+    height: 420px;
+    background-color: aliceblue;
+    border-radius: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.divisio {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+img {
+    margin-top: 37%;
+    width: 150px;
+    height: 150px;
+}
+
+audio {
+    margin-top: 40%;
+    width: 90%;
+    max-width: 300px;
+}
+
+audio::-webkit-media-controls {
+    border-radius: 10px;
+}
+
+p {
+    text-align: left;
+}
+
+td {
+    width: 100px;
+}
